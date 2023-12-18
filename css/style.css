@@ -1,0 +1,100 @@
+#wrap{
+  display: fixed;
+  width: 100%;
+  height: 130px;
+  background-color: seagreen;
+}
+#wrap .h_area{
+  width: 80%;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+background-color: cornsilk;
+margin: 0 auto;}
+.logo{
+  width: 220px;
+  margin: 30px 0 0 20px;
+  background-color: steelblue;
+}
+
+#wrap .nav{
+  margin-top: 25px;
+  width: 950px;
+  height: 100px;
+  background-color: sandybrown;
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .nav a{
+  color: #333;
+  font-weight: 900;
+  font-size: 20px;
+}
+#wrap .nav .sub{
+  display: none;
+}
+/* #wrap .nav .wrap_r{
+  width: 220px;
+  height: 60px;
+  background-color: rgb(91, 85, 85);
+} */
+.icon{
+  width: 250px;
+  background-color: slateblue;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.icon li{
+  width: 35px;
+  height: 35px;
+}
+.icon li a {
+  display: block;
+}
+.icon img{
+  width: 100%;
+}
+.Language{
+  margin: 0 auto;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  /* gap: 2%; */
+}
+#main_img{
+  width: 100%;
+  height: 610px;
+  background-color: blanchedalmond;
+}
+#main_img .photo{
+  width: 100%;
+  height: 605px;
+  /* background-color: aqua; */
+}
+#main_img .photo ul{
+  display: flex;
+  width: 7680px;
+  height: 605px;
+}
+#main_img .photo ul li{
+  width: 100%;
+  height: 605px;
+}
+#main_img .photo ul li:nth-child(1){
+  background: url(../images/콘텐츠1/art-gallery-4242219_1920.jpg) no-repeat 0 0;
+  background-size: 100%;
+}
+#main_img .photo ul li:nth-child(2){
+  background: url(../images/콘텐츠1/woman-1283009_1920.jpg) no-repeat 0 0;
+}
+#main_img .photo ul li:nth-child(3){
+  background: url(../images/콘텐츠1/museum-398761_1920.jpg) no-repeat 0 0;
+}
+#main_img .photo ul li:nth-child(4){
+  background: url(../images/콘텐츠1/museum-7995207_1920.jpg) no-repeat 0 0;
+  background-image: 100%;
+}
