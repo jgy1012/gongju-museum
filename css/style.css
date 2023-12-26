@@ -50,7 +50,7 @@ article .n_txt span{
 
 #wrap .nav{
   margin-top: 25px;
-  width: 950px;
+  width: 800px;
   height: 100px;
   /* background-color: sandybrown; */
   display: flex ;
@@ -101,7 +101,13 @@ article .n_txt span{
   padding-top: 20px;
   /* gap: 2%; */
 }
-
+.Language li a{
+  color: #333;
+}
+.Language li a:hover{
+  color: firebrick;
+  font-size: 15px;
+}
 /* ========================================================= */
 /* =========================메인 이미지 영역================== */
 /* ========================================================= */
@@ -174,6 +180,9 @@ article .n_txt span{
     /* background-color: #ccc; */
     position: relative;
   }
+  #main_img .img_area{
+    margin-right: 130px;
+  }
   #main_img .img_area img:nth-child(1){
     width: 315px;
     height: 315px;
@@ -236,7 +245,10 @@ article .n_txt span{
     background-color: #33333379;
     /* float: left; */
     padding-top: 10px;
-    font-size: 16px;
+  }
+  .banner li a{
+    color: #f1f1f1;
+    font-size: 13px;
     font-weight: 600;
   }
 /* ====================== 배너 ========================= */
