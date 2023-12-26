@@ -62,9 +62,14 @@ article .n_txt span{
   color: #f1f1f1;
 } */
 #wrap .nav a{
-  color: #333;
+  color: #666;
   font-weight: 900;
   font-size: 20px;
+}
+#wrap .nav a:hover{
+  color: #333;
+  border-bottom: 4px solid firebrick;
+  
 }
 #wrap .nav .sub{
   display: none;
@@ -224,6 +229,9 @@ article .n_txt span{
     background-color: #fff;
     border-radius: 50%;
   }
+  .btns li:hover{
+    background-color: firebrick;
+  }
   #main_img .banner{
     position: absolute;
     top: 678px;
@@ -239,7 +247,16 @@ article .n_txt span{
     /* align-items: center; */
     
   }
-  .banner li{
+  
+/* ====================== 배너 ========================= */
+
+#main_img .photo .banner{
+  width: 100%;
+  height: 80px;
+  background-color: #343333;
+  
+}
+.banner li{
     width: 370px;
     height: 45px;
     background-color: #33333379;
@@ -251,18 +268,6 @@ article .n_txt span{
     font-size: 13px;
     font-weight: 600;
   }
-/* ====================== 배너 ========================= */
-
-#main_img .photo .banner{
-  width: 100%;
-  height: 80px;
-  background-color: #343333;
-  
-}
-/* #main_img .photo .banner a{
-  color: #ccc;
-} */
-
 /* ========================================================= */
 /* =====================컨텐츠 영역========================== */
 /* ========================================================= */
@@ -281,6 +286,7 @@ article .n_txt span{
   /* background-color: seagreen; */
   margin: 0 auto;
   padding-top: 80px;
+  /* box-sizing: border-box; */
 }
 #contents .notice .no_t{
   width: 1200px;
@@ -323,8 +329,62 @@ article .n_txt span{
   width: 1000px;
   height: 100px;
   background-color: #f1f1f1;
+  position: relative;
+  overflow: hidden;
+  /* display: flex;
+  justify-content: space-between; */
+}
+/* ********아이콘*********** */
+#contents .notice .n_bb .icon_l{
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 30px;
+  top:32px;
+  z-index: 2000px;
+}
+#contents .notice .n_bb .icon_r{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right:30px;
+  top:32px
+}
+#contents .notice .n_bb ul{
+  width: 200%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
 }
 
+#contents .notice .n_bb ul li{
+  float: left;
+  width: 25%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ccc;
+}
+
+#contents .notice .n_bb ul li a:hover{
+  color: firebrick;
+  font-weight: 600;
+}
+#contents .notice .n_bb li a{
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  flex-flow: column;
+  line-height: 25px;
+}
+#contents .notice .n_bb li a span{
+  font-size: 12px;
+  color: #555;
+  
+}
 /* ======================소식========================== */
 
 #contents .news{
@@ -343,31 +403,59 @@ article .n_txt span{
   justify-content: space-between;
 }
 article .new_btn{
-  width: 490px;
-  height: 205px;
+  width: 500px;
+  height: 300px;
   background-color: #f1f1f1;
   overflow: hidden;
   font-size: 14px;
   margin-left: 5px;
+  position: relative;
 }
-/* article .new_t{
+article .new_btn .new_btn_t{
+  background-color: salmon;
+  width: 100%;
+  height: 40px;
+}
+article .new_btn .new_btn_t ul{
+  margin-left: 10px;
+  width: 50%;
+  height: 40px;
+  background-color: sandybrown;
+  /* padding-top: 10px; */
+}
+article .new_btn .new_btn_t ul li{
+  width: 50%;
+  height: 40px;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #333;
+  text-align: center;
+  box-sizing: border-box;
+  /* margin-top: 10px; */
+}
+
+
+article .new_t, article .new_b {
+  position: absolute;
+  top:50px;
+  left: 10px;
+  width: 480px;
+  height: 203px;
   
-} */
-article .new_t li{
+}
+article .new_t li, article .new_b li{
+  width: 480px;
+  height: 40px;
   border-bottom: 1px dotted #333;
   line-height: 40px;
-
 }
-article .new_t li:last-child{
+article .new_t li:last-child, article .new_b li:last-child{
   border-bottom: none;
 }
-article .new_t li > span{
+article .new_t li> span , article .new_b li > span{
   float: right;
   padding-right: 5px;
 }
-/* article .new_b{
-  
-} */
 
 #contents .new_box{
   width: 155px;
@@ -469,17 +557,33 @@ article .new_t li > span{
   box-shadow: 5px 5px 5px;
   float: left;
   margin-right: 5px;
+  box-sizing: border-box;
+}
+#contents .info .info_b li >div{
+  width: 100%; height: 30px;
+  /* padding-top: 50px; */
+  background-color: firebrick;
+  box-sizing: border-box;
+  line-height: 30px;
+  color: #fff;
 }
 #contents .info .info_b li:first-child{
   width: 700px;
   height: 100px;
   margin-bottom: 30px;
+  /* padding-top: 30px; */
 }
 #contents .info .info_b li:last-child{
   float: right;
 }
+#contents .info .info_b li:nth-child(2),
+#contents .info .info_b li:nth-child(3){
+  padding-top: 50px;
+}
 #contents .info .info_b li a{
   font-size: 16px;
+  color: #333;
+  padding-top: 15px;
 }
 /* ====================== 교육 ======================== */
 
@@ -500,13 +604,13 @@ article .new_t li > span{
 #contents .edu figure{
   width: 260px;
   height: 500px;
-  background-color: rgb(0, 69, 92);
+  /* background-color: rgb(0, 69, 92); */
   margin-top: 50px;
 }
 #contents .edu figure > h4{
   text-align: center;
   /* margin-top: 10px; */
-  font-size: 30px;
+  font-size: 15px;
   color: aliceblue;
   font-weight: 400;
   padding-top: 10px;
@@ -523,7 +627,24 @@ article .new_t li > span{
   border: 2px solid #333;
   border-radius: 5px;
   margin-top: 40px;
+  text-align: center;
 }
+#contents .edu figcaption h4{
+  font-size: 16px;
+  color: #333;
+  padding-top: 10px;
+}
+#contents .edu figcaption p{
+  /* width: 150px; */
+  color: firebrick;
+  padding-top: 10px;
+  /* border-bottom: 1px solid #333; */
+}
+#contents .edu figcaption span{
+  
+}
+
+
 
 
 #contents .edu .edu_footer{
