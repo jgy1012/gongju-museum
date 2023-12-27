@@ -8,7 +8,8 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/style1200.css">
-  
+  <link rel="stylesheet" type="text/css" href="css/style480.css">
+
   <link rel="stylesheet" type="text/css" href="css/fontawesome-free-6.5.1-web/all.min.css">
   <script src="./js/fontawesome-free-6.5.1-web/all.min.js"></script>
 
@@ -79,6 +80,44 @@
           </ul>
         </li>
       </ul>
+      <!-- ===================햄버거 버튼 ====================== -->
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="#" target="_blank">
+              <!-- <li><a href="#"><img src="./images/icon/blog.png" alt="icon1"></a></li>
+              <li><a href="#"><img src="./images/icon/twt.png" alt="icon2"></a></li>
+              <li><a href="#"><img src="./images/icon/face.png" alt="icon3"></a></li>
+              <li><a href="#"><img src="./images/icon/in.png" alt="icon4"></a></li>
+              <li><a href="#"><img src="./images/icon/you.png" alt="icon5"></a></li> -->
+            </a>
+          </ul>
+        </div>
+      </nav>
       <div class="wrap_r">
         <!-- ==================== sns 아이콘 ================= -->
         <ul class="icon">
