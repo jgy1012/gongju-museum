@@ -31,7 +31,7 @@ article .n_txt span{
   z-index: 99999;
 }
 #wrap .h_area{
-  width: 80%;
+  width: 1500px;
   height: 130px;
   display: flex;
   justify-content: space-around;
