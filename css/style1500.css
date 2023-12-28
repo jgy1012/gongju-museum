@@ -310,7 +310,7 @@ article .n_txt span{
 /* 메인이미지 글자부분 반응형 위해 선언 */
 #main_img .photo .txt_area{
    /* width: 720px; */
-   width: 48%;
+  width: 48%;
 }
 #main_img .photo .p_img h3{
   /* padding: 150px 0 5px 80px; */
@@ -335,7 +335,7 @@ article .n_txt span{
     /* width: 670px; */
     width: 45%;
     height: 390px;
-    /* background-color: #ccc; */
+    /* background-color: none; */
     position: relative;
   }
   

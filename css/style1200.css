@@ -66,7 +66,7 @@ article .n_txt span{
 #wrap .nav a{
   color: #666;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 14px;
 }
 #wrap .nav a:hover{
   color: #333;
@@ -230,8 +230,8 @@ article .n_txt span{
   justify-content: space-around;
 }
 .icon li{
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 .icon li a {
   display: block;
@@ -256,7 +256,7 @@ article .n_txt span{
 }
 .Language li a:hover{
   color: firebrick;
-  font-size: 15px;
+  font-size: 12px;
 }
 /* ========================================================= */
 /* =========================메인 이미지 영역================== */
@@ -283,7 +283,7 @@ article .n_txt span{
   display: flex;
   /* width: 7680px; */
   width: 100%;
-  height: 610px;
+  height: 51vh;
 }
 #main_img .photo .p_img li{
   width: 100%;
@@ -311,15 +311,15 @@ article .n_txt span{
 /* 메인이미지 글자부분 반응형 위해 선언 */
 #main_img .photo .txt_area{
    /* width: 720px; */
-   width: 48%;
+  width: 60%;
 }
 #main_img .photo .p_img h3{
   /* padding: 150px 0 5px 80px; */
-  padding: 150px 20px 0 20px;
+  padding: 150px 10px 0 10px;
   color: #2A513C;
   font-size: 2vw;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
 }
 #main_img .photo .p_img  span{
@@ -334,7 +334,7 @@ article .n_txt span{
     margin-top: 70px;
     margin-right: 8.6%;
     /* width: 670px; */
-    width: 45%;
+    width: 55.8%;
     height: 390px;
     /* background-color: #ccc; */
     position: relative;
@@ -393,7 +393,7 @@ article .n_txt span{
     margin-left: 0px;
     width: 100%;
     height: 80px;
-    /* background-color: #ccc; */
+    /* background-color: none; */
     /* background-color: dodgerblue; */
     display: flex;
     justify-content: space-between;
@@ -427,7 +427,7 @@ article .n_txt span{
 /* ===================이달의 일정===================== */
 
 #contents .notice{
-  width: 1200px;
+  width: 100%;
   height: 200px;
   /* background-color: seagreen; */
   margin: 0 auto;
@@ -435,21 +435,21 @@ article .n_txt span{
   /* box-sizing: border-box; */
 }
 #contents .notice .no_t{
-  width: 1200px;
+  width: 100%;
   display: flex;
   justify-content:space-between;
   padding-bottom: 20px;
 }
 #contents .notice .no_t > h3{
-  font-size: 18px;
+  font-size: 16px;
 }
 #contents .notice .line{
-  width: 1000px;
+  width: 83%;
   height: 10px;
   background-color: brown;
 }
 #contents .notice .no_b{
-  width: 1200px;
+  width: 95%;
   height: 75px;
   display: flex;
   justify-content: space-between;
@@ -472,7 +472,7 @@ article .n_txt span{
   font-size: 18px;
 }
 #contents .notice .n_bb{
-  width: 1000px;
+  width: 83%;
   height: 100px;
   background-color: #f1f1f1;
   position: relative;
@@ -534,14 +534,14 @@ article .n_txt span{
 /* ======================소식========================== */
 
 #contents .news{
-  width: 1200px;
+  width: 90%;
   height: 400px;
   padding-top: 50px;
   /* background-color: darkturquoise; */
   margin: 0 auto;
 }
 #contents .new_area{
-  width: 1200px;
+  width: 100%;
   height: 350px;
   /* background-color: #2A513C; */
   display: flex;
@@ -549,11 +549,11 @@ article .n_txt span{
   justify-content: space-between;
 }
 article .new_btn{
-  width: 500px;
-  height: 300px;
+  width: 41%;
+  height: 25vh;
   background-color: #f1f1f1;
   overflow: hidden;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 5px;
   position: relative;
 }
@@ -643,7 +643,7 @@ article .new_t li> span , article .new_b li > span{
 /* =================관람 예약 안내======================== */
 
 #contents .info{
-  width: 1200px;
+  width: 90%;
   height: 500px;
   /* background-color: hotpink; */
   padding-top: 50px;
@@ -657,7 +657,7 @@ article .new_t li> span , article .new_b li > span{
   padding-left: 50px;
 }
 #contents .info .info_nav{
-  width: 1200px;
+  width: 100%;
   height: 320px;
   /* background-color: rgb(83, 83, 83); */
   margin-top: 40px;
@@ -672,7 +672,7 @@ article .new_t li> span , article .new_b li > span{
   position: relative;
 }
 #contents .info .info_box{
-  width: 250px;
+  width: 20vw;
   height: 250px;
   background-color: #343333a9;
 }
@@ -734,21 +734,22 @@ article .new_t li> span , article .new_b li > span{
 /* ====================== 교육 ======================== */
 
 #contents .edu{
-  width: 1200px;
+  width: 100%;
   height: 900px;
   /* background-color: forestgreen; */
   padding-top: 50px;
   margin: 0 auto;
-
 }
+
 #contents .edu_nav{
-  width: 1200px;
+  width: 90%;
   height: 600px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 #contents .edu figure{
-  width: 260px;
+  width: 20vw;
   height: 500px;
   /* background-color: rgba(194, 194, 194, 0.2); */
   margin-top: 50px;
@@ -757,18 +758,18 @@ article .new_t li> span , article .new_b li > span{
   text-align: center;
   /* margin-top: 10px; */
   height: 20px;
-  font-size: 15px;
+  font-size: 12px;
   color: rgb(8, 73, 129);
   font-weight: 400;
   padding-top: 10px;
 }
 #contents .edu figure img{
-  width: 260px;
+  width: 20vw;
   height: 210px;
   padding-top: 15px;
 }
 #contents .edu figcaption{
-  width: 256px;
+  width: 20vw;
   height: 150px;
   background-color: #f1f1f1;
   border: 1px solid #ccc;
@@ -777,7 +778,7 @@ article .new_t li> span , article .new_b li > span{
   text-align: center;
 }
 #contents .edu figcaption h4{
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   padding-top: 10px;
 }
@@ -844,7 +845,7 @@ article .new_t li> span , article .new_b li > span{
 /* ==================== 문화 행사 ========================== */
 
 #contents .culture{
-  width: 1200px;
+  width: 100%;
   height: 900px;
   /* background-color: rgb(109, 131, 109); */
   padding-top: 50px;
@@ -859,7 +860,7 @@ article .new_t li> span , article .new_b li > span{
 
 #contents .culture .c_nav{
   margin-top: 20px;
-  width: 1200px;
+  width: 100%;
   height: 850px;
   background: url(../images/main_images/cu.png)  0 0; /* 배경이미지 편집*/
 }
@@ -885,7 +886,8 @@ article .new_t li> span , article .new_b li > span{
   width: 1050px;
   height: 500px;
   margin: 0 auto;
-  border:1px solid red;
+  /* border:1px solid red; */
+  border: none;
 }
 #contents .culture .c_mn .c_mn_m ul{
   margin: 0 auto;
@@ -942,7 +944,7 @@ article .new_t li> span , article .new_b li > span{
 /* ====================== 박물관 관람 후기 ==================== */
 
 #contents .review{
-  width: 1200px;
+  width: 100%;
   height: 700px;
   /* background-color: goldenrod; */
   padding-top: 100px;
@@ -954,11 +956,11 @@ article .new_t li> span , article .new_b li > span{
   font-weight: 600;
 }
 #contents .review p{
-  font-size: 26px;
+  font-size: 24px;
   padding-left: 42%;
 }
 #contents .review .r_area{
-  width: 1200px;
+  width: 100%;
   height: 680px;
   /* background-color: #306442; */
   position: relative;
@@ -970,20 +972,20 @@ article .new_t li> span , article .new_b li > span{
 /* 배경이미지 편집*/
 #contents .review .r_area li:nth-child(1){
   position: absolute;
-  width: 245px;
+  width: 25vw;
   height: 450px;
   background:url(../images/review/img_1.jpeg);
 }
 #contents .review .r_area li:nth-child(2){
   position: absolute;
-  width: 425px;
+  width: 35vw;
   height: 217px;  
   background:url(../images/review/img_22.png);
   left: 265px;
 }
 #contents .review .r_area li:nth-child(3){
   position: absolute;
-  width: 425px;
+  width: 35vw;
   height: 217px;
   background:url(../images/review/img_3.png);
   left: 265px;
@@ -991,14 +993,14 @@ article .new_t li> span , article .new_b li > span{
 }
 #contents .review .r_area li:nth-child(4){
   position: absolute;
-  width: 490px;
+  width: 35vw;
   height: 380px;
   background:url(../images/review/img_4.png);
   right: 0;
 }
 #contents .review .r_area li:nth-child(5){
   position: absolute;
-  width: 690px;
+  width: 61.5vw;
   height: 208px;
   background:url(../images/review/img_5.png);
   left: 0;
@@ -1007,7 +1009,7 @@ article .new_t li> span , article .new_b li > span{
 }
 #contents .review .r_area li:nth-child(6){
   position: absolute;
-  width: 490px;
+  width: 35vw;
   height: 280px;
   background:url(../images/review/img_6.png);
   right: 0;
@@ -1018,14 +1020,14 @@ article .new_t li> span , article .new_b li > span{
 /* ====================== 오시는 길 ========================== */
 
 #contents .faq{
-  width: 1200px;
-  height: 250px;
+  width: 100%;
+  height: 20vw;
   /* background-color: rgb(98, 95, 88); */
   padding-top: 100px;
   margin: 0 auto;
 }
 #contents .faq ul{
-  width: 1200px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -1046,7 +1048,7 @@ article .new_t li> span , article .new_b li > span{
   text-align: center;
   padding-top: 70px;
   color: #f1f1f1;
-  font-size: medium;
+  font-size: 16px;
   font-weight: 600;
 }
 #contents .faq ul a:hover i{color: #555555;}
@@ -1077,7 +1079,7 @@ footer .end_mn{
 }
 footer .end_mn .end_nav{
   margin: 0 auto; 
-  width: 1200px; 
+  width: 100%; 
   height: 50px;
   /* background-color: aqua; */
 }
@@ -1093,13 +1095,13 @@ footer .end_mn .end_nav p:first-child{
 } 
 footer .end_mn div.btns_area{
   float: left;
-  width: 1000px;
+  width: 83%;
   height: 50px;
   background-color: #ccc;
   overflow: hidden;
 }
 footer .end_mn div.btns_area ul{
-  width: 1200px;
+  width: 100%;
   height: 50px;
   justify-content: space-between;
   overflow: hidden;
@@ -1112,7 +1114,7 @@ footer .end_mn div.btns_area ul{
   border-left: #333;
 }
 footer .end_b{
-  width: 1200px;
+  width: 95%;
   height: 200px;
   /* background-color: #2A513C; */
   display: flex;
@@ -1157,6 +1159,7 @@ footer .end_b .end_m p{
 }
 
 footer .end_b .end_r{
+  display: none;
   width: 115px;
   height: 70px;
 }
