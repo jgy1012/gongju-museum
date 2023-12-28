@@ -222,7 +222,7 @@ article .n_txt span{
 /* ====================== sns 아이콘 ========================*/
 
 .icon{
-  width: 100%;
+  width: 250px;
   /* background-color: slateblue; */
   margin-top: 30px;
   display: flex;
@@ -243,7 +243,7 @@ article .n_txt span{
 
 .Language{
   margin: 0 auto;
-  width: 90%;
+  width: 200px;
   height: 30px;
   display: flex;
   justify-content: space-evenly;
